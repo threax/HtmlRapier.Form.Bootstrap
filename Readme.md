@@ -1,5 +1,5 @@
-# HtmlRapier.Forms.Bootstrap4
-This library provides a form template for bootstrap 4. There are a few options for changing the style of the form.
+# HtmlRapier.Forms.Bootstrap
+This library provides a form template for bootstrap 5. There are a few options for changing the style of the form.
 
 This defines the following form components:
  * hr.forms.default
