@@ -9,7 +9,7 @@
     <template data-hr-component="hr.forms.default">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group">
-                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 {{if xUi.autocomplete}}
                 <input id="{{uniqueId}}" class="form-control" name="{{buildName}}" type="{{buildType}}" list="{{uniqueId}}-datalist" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid" />
                 <datalist id="{{uniqueId}}-datalist"></datalist>
@@ -23,7 +23,7 @@
     <template data-hr-variant="date-time">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group">
-                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <input id="{{uniqueId}}" class="form-control" name="{{buildName}}" type="text" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"/>
                 <div class="invalid-feedback" data-hr-view="{{buildName}}ErrorMessage" data-hr-toggle="{{buildName}}Error" data-hr-class-on="d-block" data-hr-class-off="d-none" data-hr-state="off">{{{this}}}</div>
             </div>
@@ -32,7 +32,7 @@
     <template data-hr-variant="date">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group">
-                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <input id="{{uniqueId}}" class="form-control" name="{{buildName}}" type="text" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"/>
                 <div class="invalid-feedback" data-hr-view="{{buildName}}ErrorMessage" data-hr-toggle="{{buildName}}Error" data-hr-class-on="d-block" data-hr-class-off="d-none" data-hr-state="off">{{{this}}}</div>
             </div>
@@ -41,7 +41,7 @@
     <template data-hr-variant="time">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group">
-                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <input id="{{uniqueId}}" class="form-control" name="{{buildName}}" type="text" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"/>
                 <div class="invalid-feedback" data-hr-view="{{buildName}}ErrorMessage" data-hr-toggle="{{buildName}}Error" data-hr-class-on="d-block" data-hr-class-off="d-none" data-hr-state="off">{{{this}}}</div>
             </div>
@@ -50,7 +50,7 @@
     <template data-hr-variant="textarea">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group">
-                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <textarea id="{{uniqueId}}" class="form-control" name="{{buildName}}" rows="{{size}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"></textarea>
                 <div class="invalid-feedback" data-hr-view="{{buildName}}ErrorMessage" data-hr-toggle="{{buildName}}Error" data-hr-class-on="d-block" data-hr-class-off="d-none" data-hr-state="off">{{{this}}}</div>
             </div>
@@ -59,7 +59,7 @@
     <template data-hr-variant="file">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group">
-                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <input id="{{uniqueId}}" class="form-control-file" name="{{buildName}}" type="{{buildType}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"/>
                 <div class="invalid-feedback" data-hr-view="{{buildName}}ErrorMessage" data-hr-toggle="{{buildName}}Error" data-hr-class-on="d-block" data-hr-class-off="d-none" data-hr-state="off">{{{this}}}</div>
             </div>
@@ -70,7 +70,7 @@
             <div class="form-group">
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" name="{{buildName}}" value="{{buildValue}}" id="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"/>
-                    <label class="form-check-label" for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                    <label class="form-check-label form-label" for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
                     <div class="invalid-feedback" data-hr-view="{{buildName}}ErrorMessage" data-hr-toggle="{{buildName}}Error" data-hr-class-on="d-block" data-hr-class-off="d-none" data-hr-state="off">{{{this}}}</div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
     <template data-hr-variant="number">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group">
-                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <input id="{{uniqueId}}" class="form-control" name="{{buildName}}" type="number" step="any" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"/>
                 <div class="invalid-feedback" data-hr-view="{{buildName}}ErrorMessage" data-hr-toggle="{{buildName}}Error" data-hr-class-on="d-block" data-hr-class-off="d-none" data-hr-state="off">{{{this}}}</div>
             </div>
@@ -91,7 +91,7 @@
     <template data-hr-variant="select">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group">
-                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <select id="{{uniqueId}}" class="form-control" name="{{buildName}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"></select>
                 <div class="invalid-feedback" data-hr-view="{{buildName}}ErrorMessage" data-hr-toggle="{{buildName}}Error" data-hr-class-on="d-block" data-hr-class-off="d-none" data-hr-state="off">{{{this}}}</div>
             </div>
@@ -100,7 +100,7 @@
     <template data-hr-variant="multiselect">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group">
-                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <select id="{{uniqueId}}" class="form-control" name="{{buildName}}" multiple size="{{size}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"></select>
                 <div class="invalid-feedback" data-hr-view="{{buildName}}ErrorMessage" data-hr-toggle="{{buildName}}Error" data-hr-class-on="d-block" data-hr-class-off="d-none" data-hr-state="off">{{{this}}}</div>
             </div>
@@ -109,7 +109,7 @@
     <template data-hr-variant="arrayEditor">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group">
-                <label data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <div class="{{buildName}} card" data-hr-toggle="{{buildName}}Error" data-hr-class-on="border-danger">
                     <div class="card-body">
                         <div data-hr-view="items" data-hr-view-component="hr.forms.default-arrayEditorItem"></div>
@@ -123,7 +123,7 @@
     <template data-hr-variant="objectEditor">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group">
-                <label data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <div class="{{buildName}} card" data-hr-toggle="{{buildName}}Error" data-hr-class-on="border-danger">
                     <div class="card-body">
                         <div data-hr-view="items" data-hr-view-component="hr.forms.default-objectEditorItem"></div>
@@ -136,11 +136,11 @@
     <template data-hr-variant="multicheckbox">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group">
-                <label data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <div class="{{buildName}} card" data-hr-toggle="{{buildName}}Error" data-hr-class-on="border-danger">
                     <div class="card-body pt-1 pb-1 pl-2 pr-2">
                         {{if xUi.selectAll}}
-                        <div class="form-check"><input type="checkbox" class="form-check-input" id="{{uniqueId}}-hr-multicheck-selectall" value="true" data-hr-on-click="selectAll" data-hr-handle="selectAll" /><label class="form-check-label" for="{{uniqueId}}-hr-multicheck-selectall">Select All</label></div>
+                        <div class="form-check"><input type="checkbox" class="form-check-input" id="{{uniqueId}}-hr-multicheck-selectall" value="true" data-hr-on-click="selectAll" data-hr-handle="selectAll" /><label class="form-check-label form-label" for="{{uniqueId}}-hr-multicheck-selectall">Select All</label></div>
                         {{/if}}
                         <div data-hr-view="items" class="p0" data-hr-view-component="hr.forms.default-multicheckboxitem"></div>
                     </div>
@@ -153,7 +153,7 @@
     <template data-hr-variant="radiobutton">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group">
-                <label data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <div class="{{buildName}} card" data-hr-toggle="{{buildName}}Error" data-hr-class-on="border-danger">
                     <div class="card-body pt-1 pb-1 pl-2 pr-2">
                         <div data-hr-view="items" data-hr-view-component="hr.forms.default-radiobutton"></div>
@@ -166,7 +166,7 @@
     <template data-hr-variant="search">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group">
-                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <div data-hr-on-focusout="stopSearch" data-hr-handle="searchFocusParent">
                     <input id="{{uniqueId}}" class="form-control" name="{{buildName}}" type="text" data-hr-on-input="updateSearch" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"/>
                     <div class="dropdown" data-hr-toggle="popup" data-hr-class-on="show">
@@ -179,11 +179,11 @@
     </template>
 
     <template data-hr-component="hr.forms.default-multicheckboxitem">
-        <div class="form-check"><input type="checkbox" class="form-check-input" value="{{value}}" data-hr-handle="check" id="{{uniqueId}}" /><label class="form-check-label" for="{{uniqueId}}">{{label}}</label></div>
+        <div class="form-check"><input type="checkbox" class="form-check-input" value="{{value}}" data-hr-handle="check" id="{{uniqueId}}" /><label class="form-check-label form-label" for="{{uniqueId}}">{{label}}</label></div>
     </template>
 
     <template data-hr-component="hr.forms.default-radiobutton">
-        <div class="form-check"><input type="radio" class="form-check-input" id="{{uniqueId}}" name="{{name}}" value="{{value}}" data-hr-handle="radio" /><label class="form-check-label" for="{{uniqueId}}">{{label}}</label></div>
+        <div class="form-check"><input type="radio" class="form-check-input" id="{{uniqueId}}" name="{{name}}" value="{{value}}" data-hr-handle="radio" /><label class="form-check-label form-label" for="{{uniqueId}}">{{label}}</label></div>
     </template>
 
     <template data-hr-component="hr.forms.default-arrayEditorItem">
@@ -205,7 +205,7 @@
     <template data-hr-component="hr.forms.horizontal">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group row">
-                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <div class="col-sm-10">
                     {{if xUi.autocomplete}}
                     <input id="{{uniqueId}}" class="form-control" name="{{buildName}}" type="{{buildType}}" list="{{uniqueId}}-datalist" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"/>
@@ -221,7 +221,7 @@
     <template data-hr-variant="date-time">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group row">
-                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <div class="col-sm-10">
                     <input id="{{uniqueId}}" class="form-control" name="{{buildName}}" type="text" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"/>
                     <div class="invalid-feedback" data-hr-view="{{buildName}}ErrorMessage" data-hr-toggle="{{buildName}}Error" data-hr-class-on="d-block" data-hr-class-off="d-none" data-hr-state="off">{{{this}}}</div>
@@ -232,7 +232,7 @@
     <template data-hr-variant="date">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group row">
-                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <div class="col-sm-10">
                     <input id="{{uniqueId}}" class="form-control" name="{{buildName}}" type="text" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"/>
                     <div class="invalid-feedback" data-hr-view="{{buildName}}ErrorMessage" data-hr-toggle="{{buildName}}Error" data-hr-class-on="d-block" data-hr-class-off="d-none" data-hr-state="off">{{{this}}}</div>
@@ -243,7 +243,7 @@
     <template data-hr-variant="time">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group row">
-                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <div class="col-sm-10">
                     <input id="{{uniqueId}}" class="form-control" name="{{buildName}}" type="text" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"/>
                     <div class="invalid-feedback" data-hr-view="{{buildName}}ErrorMessage" data-hr-toggle="{{buildName}}Error" data-hr-class-on="d-block" data-hr-class-off="d-none" data-hr-state="off">{{{this}}}</div>
@@ -254,7 +254,7 @@
     <template data-hr-variant="textarea">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group row">
-                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <div class="col-sm-10">
                     <textarea id="{{uniqueId}}" class="form-control" name="{{buildName}}" rows="{{size}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"></textarea>
                     <div class="invalid-feedback" data-hr-view="{{buildName}}ErrorMessage" data-hr-toggle="{{buildName}}Error" data-hr-class-on="d-block" data-hr-class-off="d-none" data-hr-state="off">{{{this}}}</div>
@@ -265,7 +265,7 @@
     <template data-hr-variant="file">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group row">
-                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <div class="col-sm-10">
                     <input id="{{uniqueId}}" class="form-control-file mt-2" name="{{buildName}}" type="{{buildType}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"/>
                     <div class="invalid-feedback" data-hr-view="{{buildName}}ErrorMessage" data-hr-toggle="{{buildName}}Error" data-hr-class-on="d-block" data-hr-class-off="d-none" data-hr-state="off">{{{this}}}</div>
@@ -278,7 +278,7 @@
             <div class="form-group">
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" name="{{buildName}}" value="{{buildValue}}" id="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"/>
-                    <label class="form-check-label" for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                    <label class="form-check-label form-label" for="{{uniqueId}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
                     <div class="invalid-feedback" data-hr-view="{{buildName}}ErrorMessage" data-hr-toggle="{{buildName}}Error" data-hr-class-on="d-block" data-hr-class-off="d-none" data-hr-state="off">{{{this}}}</div>
                 </div>
             </div>
@@ -290,7 +290,7 @@
     <template data-hr-variant="number">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group row">
-                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <div class="col-sm-10">
                     <input id="{{uniqueId}}" class="form-control" name="{{buildName}}" type="number" step="any" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"/>
                     <div class="invalid-feedback" data-hr-view="{{buildName}}ErrorMessage" data-hr-toggle="{{buildName}}Error" data-hr-class-on="d-block" data-hr-class-off="d-none" data-hr-state="off">{{{this}}}</div>
@@ -301,7 +301,7 @@
     <template data-hr-variant="select">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group row">
-                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <div class="col-sm-10">
                     <select id="{{uniqueId}}" class="form-control" name="{{buildName}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"></select>
                     <div class="invalid-feedback" data-hr-view="{{buildName}}ErrorMessage" data-hr-toggle="{{buildName}}Error" data-hr-class-on="d-block" data-hr-class-off="d-none" data-hr-state="off">{{{this}}}</div>
@@ -312,7 +312,7 @@
     <template data-hr-variant="multiselect">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group row">
-                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <div class="col-sm-10">
                     <select id="{{uniqueId}}" class="form-control" name="{{buildName}}" multiple size="{{size}}" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"></select>
                     <div class="invalid-feedback" data-hr-view="{{buildName}}ErrorMessage" data-hr-toggle="{{buildName}}Error" data-hr-class-on="d-block" data-hr-class-off="d-none" data-hr-state="off">{{{this}}}</div>
@@ -323,7 +323,7 @@
     <template data-hr-variant="arrayEditor">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group row">
-                <label class="col-sm-2" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label class="col-sm-2 form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
                 <div class="col-sm-10">
                     <div class="{{buildName}} card" data-hr-toggle="{{buildName}}Error" data-hr-class-on="border-danger">
                         <div class="card-body pt-1 pb-1 pl-2 pr-2">
@@ -339,7 +339,7 @@
     <template data-hr-variant="objectEditor">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group">
-                <label data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <div class="{{buildName}} card" data-hr-toggle="{{buildName}}Error" data-hr-class-on="border-danger">
                     <div class="card-body">
                         <div data-hr-view="items" data-hr-view-component="hr.forms.horizontal-objectEditorItem"></div>
@@ -352,13 +352,13 @@
     <template data-hr-variant="multicheckbox">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group row">
-                <label class="col-sm-2" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label class="col-sm-2 form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
                 <div class="col-sm-10">
                     <div class="{{buildName}} card" data-hr-toggle="{{buildName}}Error" data-hr-class-on="border-danger">
                         <div class="card-body pt-1 pb-1 pl-2 pr-2">
                             {{if xUi.selectAll}}
                             <div class="p0">
-                                <div class="form-check"><input type="checkbox" class="form-check-input" id="{{uniqueId}}-hr-multicheck-selectall" value="true" data-hr-on-click="selectAll" data-hr-handle="selectAll" /><label class="form-check-label" for="{{uniqueId}}-hr-multicheck-selectall">Select All</label></div>
+                                <div class="form-check"><input type="checkbox" class="form-check-input" id="{{uniqueId}}-hr-multicheck-selectall" value="true" data-hr-on-click="selectAll" data-hr-handle="selectAll" /><label class="form-check-label form-label" for="{{uniqueId}}-hr-multicheck-selectall">Select All</label></div>
                             </div>
                             {{/if}}
                             <div class="p0" data-hr-view="items" data-hr-view-component="hr.forms.horizontal-multicheckboxitem"></div>
@@ -373,7 +373,7 @@
     <template data-hr-variant="radiobutton">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group row">
-                <label class="col-sm-2" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label class="col-sm-2 form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
                 <div class="col-sm-10">
                     <div class="{{buildName}} card" data-hr-toggle="{{buildName}}Error" data-hr-class-on="border-danger">
                         <div class="card-body pt-1 pb-1 pl-2 pr-2" data-hr-view="items" data-hr-view-component="hr.forms.horizontal-radiobutton"></div>
@@ -386,7 +386,7 @@
     <template data-hr-variant="search">
         <div class="{{formItemClass}}" data-hr-toggle="{{buildName}}Hide" data-hr-style-on="display:none;">
             <div class="form-group row">
-                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger">{{title}}</label>
+                <label for="{{uniqueId}}" class="col-sm-2 col-form-label" data-hr-toggle="{{buildName}}Error" data-hr-class-on="text-danger" class="form-label">{{title}}</label>
                 <div class="col-sm-10" data-hr-on-focusout="stopSearch" data-hr-handle="searchFocusParent">
                     <input id="{{uniqueId}}" class="form-control" name="{{buildName}}" type="text" data-hr-on-input="updateSearch" data-hr-toggle="{{buildName}}Error" data-hr-class-on="is-invalid"/>
                     <div class="dropdown" data-hr-toggle="popup" data-hr-class-on="show">
@@ -399,11 +399,11 @@
     </template>
 
     <template data-hr-component="hr.forms.horizontal-multicheckboxitem">
-        <div class="form-check"><input type="checkbox" class="form-check-input" value="{{value}}" data-hr-handle="check" id="{{uniqueId}}" /><label class="form-check-label" for="{{uniqueId}}">{{label}}</label></div>
+        <div class="form-check"><input type="checkbox" class="form-check-input" value="{{value}}" data-hr-handle="check" id="{{uniqueId}}" /><label class="form-check-label form-label" for="{{uniqueId}}">{{label}}</label></div>
     </template>
 
     <template data-hr-component="hr.forms.horizontal-radiobutton">
-        <div class="form-check"><input type="radio" class="form-check-input" id="{{uniqueId}}" name="{{name}}" value="{{value}}" data-hr-handle="radio" /><label class="form-check-label" for="{{uniqueId}}">{{label}}</label></div>
+        <div class="form-check"><input type="radio" class="form-check-input" id="{{uniqueId}}" name="{{name}}" value="{{value}}" data-hr-handle="radio" /><label class="form-check-label form-label" for="{{uniqueId}}">{{label}}</label></div>
     </template>
 
     <template data-hr-component="hr.forms.horizontal-arrayEditorItem">
