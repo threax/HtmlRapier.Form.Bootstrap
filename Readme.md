@@ -21,7 +21,7 @@ This will set a max height and make the card scroll if it overflows. Using max-h
 ## Building Template
 To build the template run the following command:
 ```
-htmlrapier-compile .\DefaultForm.html .\src\defaultform.ts hr.form.bootstrap4
+htmlrapier-compile .\DefaultForm.html .\src\defaultform.ts
 ```
 
 If you need to install htmlrapier-compile use the following command:
