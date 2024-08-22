@@ -1,6 +1,6 @@
 {
   "name": "htmlrapier.form.bootstrap",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "description": "A form that uses Bootstrap 5 for HtmlRapier.",
   "repository": {
     "type": "git",
